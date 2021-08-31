@@ -3,10 +3,11 @@ published: true
 ---
 ## What is Echo State Network?
 
-Echo State Network (ESN) is a class of reservoir computing and is considered as partially-trained neural networks. Three main components of ESN are: input, reservoir, and output, as shown in figure below [1].Unlike conventional neural networks, the input weight matrix $W_{in}$ and reservoir layer weight matrix $W_{x}$ are randomly generated and never changed during training or testing phases of the network.
+Echo State Network (ESN) is a class of reservoir computing and is considered as partially-trained neural networks. Three main components of ESN are: input, reservoir, and output, as shown in figure below [1].Unlike conventional neural networks, the input weight matrix $W_{in}$ and reservoir layer weight matrix $W_{x}$ are randomly generated and never changed during training or testing phases of the network. The output layer linearly combines the desired output signal from the high-dimensional hidden layer, and its weights are trained during training process. 
+![echo_state_network]({{ site.baseurl }}/images/Echo_State_Network_2021_08_30.png)
 
-![Echo State Network(1)](2021_08_30_Echo_State_Network.jpg)
-![_config.yml]({{ site.baseurl }}/images/Echo_State_Network_2021_08_30.png)
+## How ESN is trained
+
 
 ## References
 1.  

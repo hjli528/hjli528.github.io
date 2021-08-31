@@ -34,7 +34,7 @@ The training steps of ESN are:
 
 	Lets check the dimensions of both sides of the above equation
 
-	$(n_{out} \times 1) = \left((n_{out}\times m)(m \times n_r)\right)\left((n_r \times m)(m \times n_r)\right)^{-1} = (n_{out} \times n_r)$ $\checkmark$
+	$(n_{out} \times n_r) = \left((n_{out}\times m)(m \times n_r)\right)\left((n_r \times m)(m \times n_r)\right)^{-1} = (n_{out} \times n_r)$ $\checkmark$
     
 7. Once the output weight matrix $W_{out}$ is calculated, the network is ready and the state of the reservoir layer is used to calculate the output of the network as
 	$y[n+1] = f^{out}(W_{out}x[n+1])$

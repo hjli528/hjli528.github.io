@@ -3,7 +3,7 @@ published: true
 ---
 ## What is Echo State Network?
 
-Echo State Network (ESN) is a class of reservoir computing and is considered as partially-trained neural networks. Three main components of ESN are: input, reservoir, and output, as shown in figure below [1].Unlike conventional neural networks, the input weight matrix $W_{in}$ and reservoir layer weight matrix $W_{x}$ are randomly generated and never changed during training or testing phases of the network. The output layer linearly combines the desired output signal from the high-dimensional hidden layer, and its weights are trained during training process.
+Echo State Network (ESN) is a class of reservoir computing and is considered as partially-trained neural networks. Three main components of ESN are input, reservoir, and output, as shown in figure below [1]. Unlike conventional neural networks, the input weight matrix $W_{in}$ and reservoir layer weight matrix $W_{x}$ are randomly generated and never changed during training or testing phases of the network. The output layer linearly combines the desired output signal from the high-dimensional hidden layer, and its weights are trained during training process.
 
 ![echo_state_network]({{ site.baseurl }}/images/Echo_State_Network_2021_08_30.png)
 
@@ -20,7 +20,7 @@ The training steps of ESN are:
 
 	$x[n+1] = f^{res} (W_{in} u[n+1] + W_x x[n])$
 
-	where $f^{res}$ is the reservoir layer's activation function. Lets check the dimension of both sides of the equation
+	where $f^{res}$ is the reservoir layer's activation function. Let's check the dimension of both sides of the equation
 
 	$(n_r \times 1) = f^{res}((n_r \times n_{in})\times(n_{in} \times 1) + (n_r \times n_r)(n_r \times 1))$ $\checkmark$
 
@@ -32,14 +32,14 @@ The training steps of ESN are:
 
 	$W_{out} = (YX')(XX')^{-1}$
 
-	Lets check the dimensions of both sides of the above equation
+	Let's check the dimensions of both sides of the above equation
 
 	$(n_{out} \times n_r) = \left((n_{out}\times m)(m \times n_r)\right)\left((n_r \times m)(m \times n_r)\right)^{-1} = (n_{out} \times n_r)$ $\checkmark$
     
 7. Once the output weight matrix $W_{out}$ is calculated, the network is ready and the state of the reservoir layer is used to calculate the output of the network as
 	$y[n+1] = f^{out}(W_{out}x[n+1])$
 
-ESN topology refers to the interconnection pattern between reservoir neurons. Ref. [1] proposed a doubly twisted toroidal architecture and demonstrated high accuracies for biosignal processing.
+Note that Step 6 means that no gradient-based optimization is used to calculate $W_{out}$ in the training process. For this reason, ESNs have traditionally been widely used for recurrent neural networks which overcome the vanishing gradient problem. ESN topology refers to the interconnection pattern between reservoir neurons. Ref. [1] proposed a doubly twisted toroidal architecture and demonstrated high accuracies for biosignal processing.
 
 ## References
 1.  

@@ -18,12 +18,12 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:hongjiang.li@wisc.edu
+  email: hongjiang.li@wisc.edu
   facebook:
   flickr:
   github: https://github.com/hjli528
   instagram:
-  linkedin:https://www.linkedin.com/in/hongjianglierc/
+  linkedin: https://www.linkedin.com/in/hongjianglierc/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
@@ -37,11 +37,11 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:G-E3MYT8Y2JB
+google_analytics: G-E3MYT8Y2JB
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:https://hjli528.github.io/
+url: https://hjli528.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

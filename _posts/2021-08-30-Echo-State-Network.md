@@ -18,11 +18,11 @@ The training steps of ESN are:
 
 3. Calculate the response of the reservoir layer using 
 
-$x[n+1] = f^{res} (W_{in} u[n+1] + W_x x[n])$
+	$x[n+1] = f^{res} (W_{in} u[n+1] + W_x x[n])$
 
-where $f^{res}$ is the reservoir layer's activation function. Lets check the dimension of both sides of the equation
+	where $f^{res}$ is the reservoir layer's activation function. Lets check the dimension of both sides of the equation
 
-$(n_r \times 1) = f^{res}((n_r \times n_{in})\times(n_{in} \times 1) + (n_r \times n_r)(n_r \times 1))$ [$\checkmark$]
+	$(n_r \times 1) = f^{res}((n_r \times n_{in})\times(n_{in} \times 1) + (n_r \times n_r)(n_r \times 1))$ $\checkmark$
 
 4. Save the response $x[n+1]$ in a matrix $X$.
 
@@ -30,11 +30,16 @@ $(n_r \times 1) = f^{res}((n_r \times n_{in})\times(n_{in} \times 1) + (n_r \tim
 
 6. Calculate output weights $W_{out}$ based on the equation below
 
-$W_{out} = (YX')(XX')^{-1}$
+	$W_{out} = (YX')(XX')^{-1}$
 
-Lets check the dimensions of both sides of the above equation
+	Lets check the dimensions of both sides of the above equation
 
-$(n_{out} \times 1) = \left((n_{out}\times m)(m \times n_{in})\right)\left((n_r \times m)(m \times n_r)\right)^{-1} = (n_{out} \times n_r)$ [$\checkmark$]
+	$(n_{out} \times 1) = \left((n_{out}\times m)(m \times n_r)\right)\left((n_r \times m)(m \times n_r)\right)^{-1} = (n_{out} \times n_r)$ $\checkmark$
+    
+7. Once the output weight matrix $W_{out}$ is calculated, the network is ready and the state of the reservoir layer is used to calculate the output of the network as
+	$y[n+1] = f^{out}(W_{out}x[n+1])$
+
+ESN topology refers to the interconnection pattern between reservoir neurons. Ref. [1] proposed a doubly twisted toroidal architecture and demonstrated high accuracies for biosignal processing.
 
 ## References
 1.  

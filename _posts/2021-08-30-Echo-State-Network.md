@@ -7,7 +7,7 @@ Echo State Network (ESN) is a class of reservoir computing and is considered as 
 
 ![echo_state_network]({{ site.baseurl }}/images/Echo_State_Network_2021_08_30.png)
 
-## How ESN is trained
+## Training Process of Echo State Network
 Suppose we have $m$ training vector pairs, where $u[n]$ is the n-th input vector with a size of $(n_{in} \times 1)$ and $y[n]$ is the corresponding output vector with a size of $(n_{out} \times 1)$. Then the input weight matrix $W_{in}$ would have a dimension of $(n_r \times n_{in})$, the reservoir weight matrix $W_x$ has a size of $n_r \times n_r$, and the output matrix $W_{out}$ would have a dimension of $(n_{out} \times n_r)$.
 
 The training steps of ESN are:

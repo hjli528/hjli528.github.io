@@ -67,7 +67,9 @@ where $\mathcal{F}$ is a general non-linear operator, $\dot{}$ is the time deriv
 
 $E_{tot} = E_d + E_p$
 
-where $E_p = \frac{1}{n_{out}}\sum_{i=1}^{n_{out}}\frac{1}{p}\sum_{n=1}^{p}|\mathcal{F}(\hat{y_i}[n]|$, here the set $\hat{y_i}[n]$ (n=1, ...., p) denotes the "collocation points". Practically, the optimization of $W_{out}$ is performed using the L-BFGS-B algorithm with the $W_{out}$ obtained in Step 6 by ridge regression as the initial guess.
+where $E_p = \frac{1}{n_{out}}\sum_{i=1}^{n_{out}}\frac{1}{p}\sum_{n=1}^{p}|\mathcal{F}(\hat{y_i}[n]|$
+
+where the set $\hat{y_i}[n]$ (n=1, ...., p) denotes the "collocation points". Practically, the optimization of $W_{out}$ is performed using the L-BFGS-B algorithm with the $W_{out}$ obtained in Step 6 by ridge regression as the initial guess.
 
 ## Continuous Time Echo State Network
 

@@ -2,14 +2,11 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a Machine Learning engineer at Ford Motor Company working on Physics Informed Neural Networks, Computer Visision, GANs, etc.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hongjiang.li@wisc.edu](mailto:hongjiang.li@wisc.edu)

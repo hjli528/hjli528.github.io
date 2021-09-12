@@ -1,6 +1,10 @@
 ---
 published: true
 ---
+---
+layout: post
+title: Logistic Regression from Scratch
+---
 # Logistic regression
 $$X =\begin{bmatrix}
     x_1^1 & x_2^1 & x_3^1 & ... & x_n^1 \\

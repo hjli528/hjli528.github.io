@@ -2,7 +2,7 @@
 published: true
 ---
 # Logistic regression
-X= $$\begin{bmatrix}
+$$X =\begin{bmatrix}
     x_1^1 & x_2^1 & x_3^1 & ... & x_n^1 \\
     x_1^2 & x_2^2 & x_3^2 & ... & x_n^2 \\
     x_1^2 & x_2^2 & x_3^2 & ... & x_n^2 \\

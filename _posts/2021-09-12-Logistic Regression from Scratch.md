@@ -53,7 +53,15 @@ $h_\theta(z) = \frac{1}{1 + \exp(-z)}$
 
 Once the logistic function outputs the probability $\hat p = h_\theta(z)$, we can make a prediction easily
 
-f(x)=\begin{cases}1 & x\in\mathbb{Q}\\ 0 & x\notin\mathbb{Q} \\ \end{cases}
+$$\begin{align}
+f(x)=\left\{
+                \begin{array}{ll}
+                     n, \text{if}\quad x \in L_n\\
+                     s, \text{if}\quad x \in L_s\\
+                     p, \text{if}\quad x \in L_p
+                \end{array}
+              \right.
+\end{align}$$
 
 ##
 In Machine Learning, vectors are often represented as column vectors. Suppose our training set contains $n$ training examples with $m$ features, then it can be written as:

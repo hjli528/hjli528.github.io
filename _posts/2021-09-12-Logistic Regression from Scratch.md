@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Logistic regression
 X= $\begin{bmatrix}
